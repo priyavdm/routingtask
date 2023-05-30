@@ -1,0 +1,22 @@
+<h3>child works!</h3>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>gender</th>
+                <th>message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr (click)="list(c.id)" *ngFor="let c of getchilddata">
+                <td>{{c.cname}}</td>
+                <td>{{c.cage}}</td>
+                <td>{{c.cgender}}</td>
+                <td>{{c.cmessage}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

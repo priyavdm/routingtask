@@ -1,0 +1,21 @@
+<h3>parent works!</h3>
+<div class="table">
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>subjects</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr (click)="list(e.id)" *ngFor="let e of getparentdata">
+            <td>{{e.username}}</td>
+            <td>{{e.age}}</td>
+            <td>{{e.email}}</td>
+            <td>{{e.subjects}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
