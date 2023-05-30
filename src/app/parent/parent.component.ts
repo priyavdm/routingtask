@@ -22,6 +22,7 @@ export class ParentComponent implements OnInit{
       this.getparentdata=data;
     })
   }
+  //it will written for button
   list(id:string|null){
     this.router.navigate(['parent',id])
   }

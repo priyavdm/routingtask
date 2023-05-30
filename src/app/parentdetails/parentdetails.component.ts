@@ -12,6 +12,8 @@ export class ParentdetailsComponent implements OnInit{
   getparentdet:any;
 
   constructor(public service:ServiceService, public ActRoute:ActivatedRoute){}
+
+  //inject activeroute & service
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
     let id=this.ActRoute.snapshot.paramMap.get('id')

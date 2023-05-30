@@ -14,6 +14,7 @@ app.use(express.json())
 app.use(cors())
 connection.connect();
 
+//*****************get parent data******************
 app.get('/getparent',(req,res)=>{
     connection.query('select * from task',function(error,results){
         if(error){
@@ -24,6 +25,7 @@ app.get('/getparent',(req,res)=>{
     })
 })
 
+//**********************get parentdetails based on id********************
 app.get('/parentdet/:id',(req,res)=>{
     connection.query('select * from task where id=?',[req.params.id],function(error,results){
         if(error){
@@ -34,6 +36,7 @@ app.get('/parentdet/:id',(req,res)=>{
     })
 })
 
+//**********************get child data*********************
 app.get('/getchild',(req,res)=>{
     connection.query('select * from ctask',function(error,results){
         if(error){
@@ -44,6 +47,7 @@ app.get('/getchild',(req,res)=>{
     })
 })
 
+//****************************get childdetails based on id****************
 app.get('/childdet/:id',(req,res)=>{
     connection.query('select * from ctask where id=?',[req.params.id],function(error,results){
         if(error){

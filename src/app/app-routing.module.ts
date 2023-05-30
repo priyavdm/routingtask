@@ -6,10 +6,13 @@ import { ChilddetailsComponent } from './childdetails/childdetails.component';
 import { ParentdetailsComponent } from './parentdetails/parentdetails.component';
 
 const routes: Routes = [
+  //get all datas
   {path:'parent', component:ParentComponent},
   {path:'child', component:ChildComponent},
+  //get particular id
   {path:'parent/:id', component:ParentdetailsComponent},
   {path:'child/:id', component:ChilddetailsComponent},
+  //this is mandatory field
   {path:'**', component:ParentComponent}
 ];
 
