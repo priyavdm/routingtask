@@ -1,6 +1,9 @@
 h3{
     text-align: center;
 }
-.list{
-    text-align: center;
+ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
